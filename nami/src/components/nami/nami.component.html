@@ -4,7 +4,7 @@
   <p>Fui chamado {{count}}</p>
   <img [src]="imgSource" [alt]="name">
   <div class="fieldset">
-    <button (click)="disabled = !disabled">Turn on/Off</button>
+    <button (click)="toggleHeader()">Turn on/Off</button>
     <input type="text" name="tx" id="tx" [(ngModel)]="name">
   </div>
 </div>

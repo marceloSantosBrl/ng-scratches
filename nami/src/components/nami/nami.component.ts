@@ -12,12 +12,16 @@ import {FormsModule} from "@angular/forms";
 export class NamiComponent {
   name = 'Nami'
   count = 0
+  disabled = false
+  imgSource = 'https://criticalhits.com.br/wp-content/uploads/2022/04/nami-768x432.jpg'
 
   updateCount(){
     this.count += 1;
   }
-  disabled = false
 
-  imgSource = 'https://criticalhits.com.br/wp-content/uploads/2022/04/nami-768x432.jpg'
+  toggleHeader(){
+    this.disabled = !this.disabled;
+  }
+
 
 }
