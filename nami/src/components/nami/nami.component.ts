@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {FormsModule} from "@angular/forms";
 
 @Component({
@@ -14,12 +14,14 @@ export class NamiComponent {
   count = 0
   disabled = false
   imgSource = 'https://criticalhits.com.br/wp-content/uploads/2022/04/nami-768x432.jpg'
+  messageMapping:
+    { [k: string]: string } = {'=0': 'Não fui chamado.', '=1': 'Fui chamado uma vez.', 'other': 'Fui chamado # vezes.'};
 
-  updateCount(){
+  updateCount() {
     this.count += 1;
   }
 
-  toggleHeader(){
+  toggleHeader() {
     this.disabled = !this.disabled;
   }
 
