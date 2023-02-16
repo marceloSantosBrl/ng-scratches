@@ -3,8 +3,8 @@
   <button (click)="updateCount()">+1</button>
   <p>Fui chamado {{count}}</p>
   <img [src]="imgSource" [alt]="name">
-  <div class="fieldset">
+  <div class="input-field">
     <button (click)="toggleHeader()">Turn on/Off</button>
-    <input type="text" name="tx" id="tx" [(ngModel)]="name">
+    <input type="text" name="input" id="input" [(ngModel)]="name">
   </div>
 </div>

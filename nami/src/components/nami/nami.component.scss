@@ -1,14 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.fieldset {
-  display: flex;
-  gap: 1rem;
-}
-
 button {
   width: 5rem;
 }
@@ -16,3 +5,15 @@ button {
 img {
   width: 15rem;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-field {
+  display: flex;
+  gap: 1rem;
+}
+
