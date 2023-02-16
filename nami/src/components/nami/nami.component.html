@@ -1,7 +1,7 @@
 <div class="container">
   <p *ngIf="!disabled">Olá meu nome é {{name}}</p>
   <button (click)="updateCount()">+1</button>
-  <p>Fui chamado {{count}}</p>
+  <p>Fui chamado {{count}} vezes</p>
   <img [src]="imgSource" [alt]="name">
   <div class="input-field">
     <button (click)="toggleHeader()">Turn on/Off</button>
